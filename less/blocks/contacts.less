@@ -1,0 +1,167 @@
+.contacts {
+  margin-bottom: 40px;
+
+  @media @tablet {
+    margin-bottom: 58px;
+  }
+
+  @media @desktop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    position: relative;
+
+    margin-left: 175px;
+    margin-bottom: 105px;
+    padding-right: 630px;
+    }
+}
+
+.contacts__wrapper {
+
+  @media @tablet {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  @media @desktop {
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin-bottom: 50px;
+  }
+}
+
+.contacts__title {
+  font-size: 24px;
+  line-height: 30px;
+
+  margin: 0;
+  padding-bottom: 25px;
+  position: relative;
+
+  @media @tablet {
+    font-size: 40px;
+    line-height: 50px;
+
+    padding-bottom: 50px;
+  }
+
+  @media @desktop {
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  &::after {
+    @media @tablet {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -10px;
+
+      width: 47px;
+      height: 80px;
+      background-image: url("../img/icon-flag.svg");
+    }
+
+    @media @desktop {
+      left: -110px;
+      top: -7px;
+    }
+  }
+}
+
+.contacts__date {
+  font-family: @fonts-page;
+  font-size: 14px;
+  line-height: 30px;
+  color: @color-page;
+
+  margin: 0;
+  max-width: 182px;
+
+  @media @tablet {
+    max-width: 210px;
+
+    font-size: 16px;
+  }
+}
+
+.contacts__date:nth-child(1) {
+  flex-basis: 80px;
+  flex-shrink: 0;
+ }
+
+.contacts__link {
+  text-decoration: none;
+  color: @color-page;
+  transition: all .15s;
+
+  border-bottom: 1px solid @color-form;
+
+  &:hover {
+    color: @color-krayol;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__row {
+  display: flex;
+  margin-bottom: 30px;
+
+  @media @tablet {
+    width: 280px;
+    margin: 0;
+  }
+
+  @media @desktop {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__date:nth-child(1) {
+  flex-basis: 80px;
+  flex-shrink: 0;
+}
+
+.contacts__row:nth-child(2) {
+  @media @tablet {
+    margin-left: 50px;
+  }
+
+  @media @desktop {
+    margin-left: 0;
+  }
+}
+
+.contacts__map {
+  margin-left: -30px;
+  margin-bottom: 35px;
+  width: 320px;
+  height: 460px;
+  background-image: url("../img/map-mobile@1x.jpg");
+
+  @media @tablet {
+    text-align: center;
+    margin-left: -50px;
+    width: 768px;
+    height: 455px;
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    margin-bottom: 55px;
+  }
+
+  @media @desktop {
+    height: 455px;
+    width: 525px;
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+}

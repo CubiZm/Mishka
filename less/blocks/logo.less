@@ -1,0 +1,31 @@
+.logo {
+  transition: all .15s;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__icon {
+
+  @media @tablet {
+    width: 115px;
+    height: 50px;
+  }
+
+  @media @desktop {
+    width: 150px;
+    height: 75px;
+  }
+
+}
+
+.logo-footer {
+  display: none;
+  @media @tablet {
+    display: block;
+  }
+}
